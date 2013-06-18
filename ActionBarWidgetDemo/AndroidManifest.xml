@@ -1,0 +1,53 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.monigarr.actionbarwidgetdemo"
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.monigarr.actionbarwidgetdemo.ParseWorkshopApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.monigarr.actionbarwidgetdemo.LoginOrSignupActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.monigarr.actionbarwidgetdemo.AuthenticateActivity"
+            android:label="@string/title_activity_authenticate" >
+        </activity>
+        <activity
+            android:name="com.monigarr.actionbarwidgetdemo.MainFeedActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.monigarr.actionbarwidgetdemo.SelectUsersActivity"
+            android:label="@string/title_activity_select_users" >
+        </activity>
+        <activity
+            android:name="com.monigarr.actionbarwidgetdemo.AddLinkActivity"
+            android:label="@string/title_activity_add_link" >
+        </activity>
+        <receiver 
+            android:name=".WidgetProvider"
+            android:label="Action Bar Widget Demo">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+        </receiver>
+    </application>
+
+</manifest>
