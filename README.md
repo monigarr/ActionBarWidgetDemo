@@ -69,3 +69,30 @@ Learning Resources / Tutorials
  * Responsive http://developer.android.com/training/articles/perf-anr.html
  * Action Bar http://www.vogella.com/articles/AndroidActionBar/article.html
  * Action Bar http://developer.android.com/reference/android/app/ActionBar.html
+
+ PROJECT 4. 
+ ====
+ * Due Thursday June 27th 2013
+ * Completed 
+
+REQUIREMENTS:
+ WebView Requirements
+
+    Well designed
+    At least 1 data collection control
+    At least 1 user interaction control (button, etc.)
+    At least 1 JavaScript method for enhanced UI
+    At least 1 JavaScript method for native integration
+
+Native Requirements
+
+    At least 1 meaninful Activity including a WebView
+    Properly defined JavaScript interface
+    At least 1 method to accept and meaningfully handle data from WebView
+    At least 1 intent initiated from a method called from WebView
+
+General Requirements
+
+    Application should have purpose
+    Application should be cohesive
+    Application should follow proper UI/UX principles
